@@ -35,9 +35,6 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rp5-6l-tHC">
                                 <rect key="frame" x="47" y="402" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="swRememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="isW-Zr-5GB"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-I2-wFn">
                                 <rect key="frame" x="114" y="406" width="192" height="21"/>
@@ -70,8 +67,8 @@
                     <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI"/>
                     <connections>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
-                        <outlet property="txtUsername" destination="8bC-Xf-vdC" id="eg9-rp-rZb"/>
-                        <segue destination="fcn-58-NDJ" kind="show" id="h1f-WE-QQV"/>
+                        <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
+                        <segue destination="fcn-58-NDJ" kind="show" identifier="MoveToCustomer" id="h1f-WE-QQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmo-H3-Jdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712" y="-56"/>
+            <point key="canvasLocation" x="599" y="-56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OgU-1W-SPI">
