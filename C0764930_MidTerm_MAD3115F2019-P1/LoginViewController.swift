@@ -13,11 +13,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var outRemember: UISwitch!
+    @IBOutlet weak var outletRemember: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+        
+        
+        txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
+        txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
+        
+        outletRemember.isOn = true
+        
     }
 
     
@@ -47,7 +55,7 @@ class ViewController: UIViewController {
         
     }
     else{
-    let alert = UIAlertController(title: "Email Error", message: "Your Email is less than 10 charachter. Please enter a valid email", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Invalid Username", message: "Please enter a valid Username", preferredStyle: .alert)
     
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -59,7 +67,7 @@ class ViewController: UIViewController {
     
 }
 
-    @IBAction func swRememberMe(_ sender: UISwitch) {
+    @IBAction func switchRememberMe(_ sender: UISwitch) {
         
         
         
