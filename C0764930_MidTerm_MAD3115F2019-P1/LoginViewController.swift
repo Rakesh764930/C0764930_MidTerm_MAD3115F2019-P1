@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func btnLogin(_ sender: UIButton)
     {
-        
+        let unm=txtUsername.text
         
     }
     
