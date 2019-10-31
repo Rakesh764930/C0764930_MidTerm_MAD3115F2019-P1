@@ -33,7 +33,17 @@ class ViewController: UIViewController {
         
         if usnm == "Rks764930"
         {
-          
+            if pswd == "4141"
+            {
+                print("Login Successful")
+                performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+                
+            }else{
+                print("Incorrect Password")
+                 }
+        }else{
+            print("Incorrect Username")
+            }
         
     }
     else{
