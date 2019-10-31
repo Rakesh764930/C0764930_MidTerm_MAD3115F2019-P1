@@ -14,6 +14,11 @@
 		9B11A461236A583C0036E84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */; };
 		9B11A4A9236A66F30036E84F /* Vertical_FullColour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */; };
 		9B11A4AB236A74F00036E84F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A4AA236A74F00036E84F /* Customer.swift */; };
+		9B2AB58A236B820300276CC2 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB589236B820300276CC2 /* Bill.swift */; };
+		9B2AB58C236B823700276CC2 /* HydroBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58B236B823700276CC2 /* HydroBill.swift */; };
+		9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58D236B826300276CC2 /* InternetBill.swift */; };
+		9B2AB590236B82D200276CC2 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58F236B82D200276CC2 /* MobileBill.swift */; };
+		9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB592236B836300276CC2 /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		9B11A462236A583C0036E84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vertical_FullColour.jpg; sourceTree = "<group>"; };
 		9B11A4AA236A74F00036E84F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B2AB589236B820300276CC2 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		9B2AB58B236B823700276CC2 /* HydroBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroBill.swift; sourceTree = "<group>"; };
+		9B2AB58D236B826300276CC2 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
+		9B2AB58F236B82D200276CC2 /* MobileBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBill.swift; sourceTree = "<group>"; };
+		9B2AB592236B836300276CC2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		9B11A455236A583C0036E84F /* C0764930_MidTerm_MAD3115F2019-P1 */ = {
 			isa = PBXGroup;
 			children = (
+				9B2AB588236B7FCC00276CC2 /* Bill */,
 				9B11A4AC236A75040036E84F /* Customer */,
 				9B11A456236A583C0036E84F /* AppDelegate.swift */,
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
@@ -76,6 +87,18 @@
 				9B11A4AA236A74F00036E84F /* Customer.swift */,
 			);
 			path = Customer;
+			sourceTree = "<group>";
+		};
+		9B2AB588236B7FCC00276CC2 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				9B2AB589236B820300276CC2 /* Bill.swift */,
+				9B2AB58B236B823700276CC2 /* HydroBill.swift */,
+				9B2AB58D236B826300276CC2 /* InternetBill.swift */,
+				9B2AB58F236B82D200276CC2 /* MobileBill.swift */,
+				9B2AB592236B836300276CC2 /* IDisplay.swift */,
+			);
+			path = Bill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
+				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
 				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
+				9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */,
+				9B2AB58C236B823700276CC2 /* HydroBill.swift in Sources */,
+				9B2AB590236B82D200276CC2 /* MobileBill.swift in Sources */,
 				9B11A457236A583C0036E84F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

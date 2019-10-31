@@ -69,7 +69,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI"/>
                     <connections>
-                        <outlet property="outRemember" destination="rp5-6l-tHC" id="fGr-eT-TRf"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
                         <segue destination="fcn-58-NDJ" kind="show" identifier="MoveToCustomer" id="h1f-WE-QQV"/>
@@ -92,6 +91,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glb-Yg-aRs">
+                                <rect key="frame" x="39" y="88" width="303" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="g6g-fZ-XVX"/>
@@ -99,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmo-H3-Jdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-56"/>
+            <point key="canvasLocation" x="779.71014492753625" y="-56.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OgU-1W-SPI">

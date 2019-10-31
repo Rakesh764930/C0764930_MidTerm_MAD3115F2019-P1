@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let usnm=txtUsername.text!
         let pswd=txtPassword.text!
         
-        if usnm.count > 5
+        if usnm.count > 7
         {
         
         if usnm == "Rks764930"
