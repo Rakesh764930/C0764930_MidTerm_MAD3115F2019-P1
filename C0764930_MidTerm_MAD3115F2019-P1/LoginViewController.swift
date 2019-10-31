@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    
+    @IBOutlet weak var outRemember: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,4 +59,10 @@ class ViewController: UIViewController {
     
 }
 
+    @IBAction func swRememberMe(_ sender: UISwitch) {
+        
+        
+        
+        
+    }
 }
