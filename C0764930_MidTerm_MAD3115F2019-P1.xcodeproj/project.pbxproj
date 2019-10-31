@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9B11A457236A583C0036E84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A456236A583C0036E84F /* AppDelegate.swift */; };
-		9B11A459236A583C0036E84F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A458236A583C0036E84F /* ViewController.swift */; };
+		9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A458236A583C0036E84F /* LoginViewController.swift */; };
 		9B11A45C236A583C0036E84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45A236A583C0036E84F /* Main.storyboard */; };
 		9B11A45E236A583C0036E84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45D236A583C0036E84F /* Assets.xcassets */; };
 		9B11A461236A583C0036E84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */; };
+		9B11A4A9236A66F30036E84F /* Vertical_FullColour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B11A453236A583C0036E84F /* C0764930_MidTerm_MAD3115F2019-P1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C0764930_MidTerm_MAD3115F2019-P1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B11A456236A583C0036E84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B11A458236A583C0036E84F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B11A458236A583C0036E84F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B11A45B236A583C0036E84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B11A45D236A583C0036E84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B11A460236A583C0036E84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B11A462236A583C0036E84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vertical_FullColour.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				9B11A456236A583C0036E84F /* AppDelegate.swift */,
-				9B11A458236A583C0036E84F /* ViewController.swift */,
+				9B11A458236A583C0036E84F /* LoginViewController.swift */,
 				9B11A45A236A583C0036E84F /* Main.storyboard */,
 				9B11A45D236A583C0036E84F /* Assets.xcassets */,
 				9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */,
 				9B11A462236A583C0036E84F /* Info.plist */,
+				9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */,
 			);
 			path = "C0764930_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				9B11A461236A583C0036E84F /* LaunchScreen.storyboard in Resources */,
 				9B11A45E236A583C0036E84F /* Assets.xcassets in Resources */,
+				9B11A4A9236A66F30036E84F /* Vertical_FullColour.jpg in Resources */,
 				9B11A45C236A583C0036E84F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B11A459236A583C0036E84F /* ViewController.swift in Sources */,
+				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
 				9B11A457236A583C0036E84F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
