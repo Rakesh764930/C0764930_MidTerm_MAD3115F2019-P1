@@ -19,6 +19,7 @@
 		9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58D236B826300276CC2 /* InternetBill.swift */; };
 		9B2AB590236B82D200276CC2 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58F236B82D200276CC2 /* MobileBill.swift */; };
 		9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB592236B836300276CC2 /* IDisplay.swift */; };
+		9BEE9EEF236B8EFA008B0D1C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9EEE236B8EFA008B0D1C /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9B2AB58D236B826300276CC2 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
 		9B2AB58F236B82D200276CC2 /* MobileBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBill.swift; sourceTree = "<group>"; };
 		9B2AB592236B836300276CC2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		9BEE9EEE236B8EFA008B0D1C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9B11A4AC236A75040036E84F /* Customer */,
 				9B11A456236A583C0036E84F /* AppDelegate.swift */,
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
+				9BEE9EEE236B8EFA008B0D1C /* Singleton.swift */,
 				9B11A45A236A583C0036E84F /* Main.storyboard */,
 				9B11A45D236A583C0036E84F /* Assets.xcassets */,
 				9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
+				9BEE9EEF236B8EFA008B0D1C /* Singleton.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
 				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
