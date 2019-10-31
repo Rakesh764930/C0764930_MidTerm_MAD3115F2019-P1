@@ -32,5 +32,7 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func swRememberMe(_ sender: UISwitch) {
+    }
 }
 
