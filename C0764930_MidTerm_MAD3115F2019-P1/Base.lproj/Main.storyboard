@@ -67,7 +67,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI"/>
+                    <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI">
+                        <barButtonItem key="backBarButtonItem" title="logout" id="lxa-lw-ISb"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
