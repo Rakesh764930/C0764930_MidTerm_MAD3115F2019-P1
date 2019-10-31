@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func btnLogin(_ sender: UIButton)
     {
         let unm=txtUsername.text
-        let psw=txtPassword
+        let psw=txtPassword.text
         
     }
     
