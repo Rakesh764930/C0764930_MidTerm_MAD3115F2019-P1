@@ -70,6 +70,14 @@ class ViewController: UIViewController {
     @IBAction func switchRememberMe(_ sender: UISwitch) {
         
         
+        if outletRemember.isOn
+        {
+            let newUsername = txtUsername.text!
+            let newPassword = txtPassword.text!
+            UserDefaults.standard.set(newUsername, forKey: "usnm")
+            UserDefaults.standard.set(newPassword, forKey: "pswd")
+            
+        }
         
         
     }
