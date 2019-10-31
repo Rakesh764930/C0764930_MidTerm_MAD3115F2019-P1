@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let unm=txtUsername.text
         let psw=txtPassword.text
         
-        if unm=="RKS764930"
+        if unm=="Rks764930"
         {
             
         }
