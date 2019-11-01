@@ -16,12 +16,15 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
     
     var tempSingleton=Singleton.getObject()
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return tempSingleton.countReturn()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+       let t1=tempSingleton.returnCustObj(custId: <#T##Int#>)
     }
     
 
