@@ -16,33 +16,28 @@ class Customer {
         return firstName + " " + lastName
     }
     var email : String
-    var billDictionary = Dictionary<Int, Bill>()
-    init(customerID : Int, firstName : String, lastName : String, email : String, billDictionary : Dictionary<Int, Bill>){
-        self.customerId = customerID
-        self.firstName = firstName
-        self.lastName = lastName
-        self.email = email
-        self.billDictionary = billDictionary
-    }
+    //var billDictionary = Dictionary<Int, Bill>()
     init(customerID : Int, firstName : String, lastName : String, email : String){
         self.customerId = customerID
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+      
     }
-    //  override
-    func display() {
-        print("*****************************")
-        print("Customer Id : \(customerId)")
-        print("Full Name : \(fullName)")
-        if billDictionary != nil{
-            for i in billDictionary.values
-            {
-                i.display()
-            }
-        }
-        else {
-            print("user has no bill")
-        }
-    }
+
+//    //  override
+//    func display() {
+//        print("*****************************")
+//        print("Customer Id : \(customerId)")
+//        print("Full Name : \(fullName)")
+//        if billDictionary != nil{
+//            for i in billDictionary.values
+//            {
+//                i.display()
+//            }
+//        }
+//        else {
+//            print("user has no bill")
+//        }
+//    }
 }

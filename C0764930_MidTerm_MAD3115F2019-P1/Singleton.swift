@@ -10,13 +10,13 @@ import UIKit
 
 class Singleton: NSObject {
     
+    private var custDict:[Int:Customer]
 
     private override init() {
 
     }
     private static var singletonObj=Singleton()
 
-   private var custDict:[Int:Customer]
 
     internal static func getObject() ->Singleton
     {
@@ -24,14 +24,14 @@ class Singleton: NSObject {
     }
 
 
-    func addNewCust(firstName:String,lastName:String,email:String)  {
+    func addNewCust(cId:Int ,fName:String,lName:String,cEmail:String)  {
         let c1=custDict.count+1
-        //let c2=Customer(customerID: c1, firstName: <#T##String#>, lastName: <#T##String#>, email: <#T##String#>)
+        let c2=Customer(customerID: c1, firstName: fName, lastName:lName , email: cEmail)
         
-        
+        self.addCustomer(c: c2)
         
     }
-    func retCustObj(custId:Int)->Customer?
+    func returnCustObj(custId:Int)->Customer?
     {
         for(key,value) in custDict
         {
@@ -67,7 +67,7 @@ class Singleton: NSObject {
     func printCustData(){
         for key in custDict.values
         {
-            print(key.Customer.Fullname)
+            print(key.fullName)
         }
     }
     

@@ -8,7 +8,13 @@
 
 import UIKit
 
-class CustTableViewController: ViewController,UITableViewDelegate,UITableViewDataSource {
+class CustTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         <#code#>
     }
@@ -16,7 +22,6 @@ class CustTableViewController: ViewController,UITableViewDelegate,UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         <#code#>
     }
-    
     
 
     override func viewDidLoad() {
