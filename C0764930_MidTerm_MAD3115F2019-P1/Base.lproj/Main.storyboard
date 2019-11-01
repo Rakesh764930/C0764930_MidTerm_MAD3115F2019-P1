@@ -37,9 +37,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="swRememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="rOC-iM-TIr"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-I2-wFn">
                                 <rect key="frame" x="114" y="406" width="192" height="21"/>
@@ -73,7 +70,7 @@
                         <barButtonItem key="backBarButtonItem" title="logout" id="lxa-lw-ISb"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="outletRemember" destination="rp5-6l-tHC" id="eFP-VT-VB6"/>
+                        <outlet property="outletRemember" destination="rp5-6l-tHC" id="7Lp-sS-jeY"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
                         <segue destination="fcn-58-NDJ" kind="show" identifier="MoveToCustomer" id="h1f-WE-QQV"/>

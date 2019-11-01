@@ -16,6 +16,7 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var outletRemember: UISwitch!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let gblData = Singleton.getObject()
