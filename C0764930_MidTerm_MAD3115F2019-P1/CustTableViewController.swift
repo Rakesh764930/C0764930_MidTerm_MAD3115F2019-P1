@@ -38,8 +38,16 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
         tempSingleton.defaultCustomer()
         // Do any additional setup after loading the view.
     }
-    
-
+  
+    @IBAction func AddNewCust(_ sender: UIBarButtonItem) {
+        
+        let newStBd = UIStoryboard(name: "Main", bundle: nil)
+        let NewCustVC = newStBd.instantiateViewController(withIdentifier: "NewCustVC") as! NewCustomerViewController
+        navigationController?.pushViewController(NewCustVC, animated: true)
+        
+        
+        
+    }
     /*
     // MARK: - Navigation
 

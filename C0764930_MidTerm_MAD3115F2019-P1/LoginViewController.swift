@@ -71,9 +71,10 @@ class ViewController: UIViewController {
 
         
         
-    @IBAction func switchRemember(_ sender: Any) {
+ 
+    @IBAction func RememberMe(_ sender: UISwitch) {
     
-    if outletRemember.isOn
+        if outletRemember.isOn
         {
             let newUsername = txtUsername.text!
             let newPassword = txtPassword.text!

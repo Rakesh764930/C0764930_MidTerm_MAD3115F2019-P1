@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Singleton: NSObject {
+class Singleton : NSObject {
     
-    private var customerDict=[Int:Customer]()
+    private var customerDict=Dictionary<Int,Customer>()
     
     private override init(){
         
