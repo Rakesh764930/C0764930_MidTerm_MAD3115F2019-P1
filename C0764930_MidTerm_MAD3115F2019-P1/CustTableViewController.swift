@@ -35,6 +35,7 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
         super.viewDidLoad()
         tblCustomer.delegate=self
         tblCustomer.dataSource=self
+        tempSingleton.defaultCustomer()
         // Do any additional setup after loading the view.
     }
     
