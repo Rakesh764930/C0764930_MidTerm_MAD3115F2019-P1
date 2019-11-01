@@ -27,7 +27,8 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tblCustomer.delegate=self
+        tblCustomer.dataSource=self
         // Do any additional setup after loading the view.
     }
     
