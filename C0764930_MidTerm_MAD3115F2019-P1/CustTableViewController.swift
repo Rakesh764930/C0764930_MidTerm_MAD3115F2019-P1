@@ -24,7 +24,10 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let t1=tempSingleton.returnCustObj(custId: <#T##Int#>)
+       let t1=tempSingleton.returnCustObj(custId: Int(indexPath.row+1))
+        let tblCell = tableView.dequeueReusableCell(withIdentifier: "SingletonCell", for: indexPath)
+        tblCell.textLabel?.text = t1?.fullName
+        return tblCell
     }
     
 
