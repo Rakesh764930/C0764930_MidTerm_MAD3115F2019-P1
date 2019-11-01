@@ -18,14 +18,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let gblData = Singleton.getObject()
+        gblData.defaultCustomer()
         // Do any additional setup after loading the view.
-        
-        
+  
         txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
         txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
         
-      // outletRemember.isOn = true
+        
         
     }
 
@@ -39,6 +39,17 @@ class ViewController: UIViewController {
         
         if usnm.count > 7
         {
+            if outletRemember.isOn
+            {
+                
+                UserDefaults.standard.set(usnm, forKey: "usnm")
+                UserDefaults.standard.set(pswd, forKey: "pswd")
+                
+            }
+            else{
+                UserDefaults.standard.removeObject(forKey: "usnm")
+                UserDefaults.standard.removeObject(forKey: "pswd")
+            }
         
         if usnm == "Rks764930"
         {
@@ -69,20 +80,7 @@ class ViewController: UIViewController {
 }
 
 
-        
+}
         
  
-    @IBAction func RememberMe(_ sender: UISwitch) {
     
-        if outletRemember.isOn
-        {
-            let newUsername = txtUsername.text!
-            let newPassword = txtPassword.text!
-            UserDefaults.standard.set(newUsername, forKey: "usnm")
-            UserDefaults.standard.set(newPassword, forKey: "pswd")
-            
-        }
-        
-        
-    }
-}

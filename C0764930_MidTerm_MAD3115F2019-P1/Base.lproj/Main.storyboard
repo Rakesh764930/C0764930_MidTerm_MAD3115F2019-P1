@@ -38,7 +38,6 @@
                                 <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="RememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="iE0-Ha-Kok"/>
                                     <action selector="swRememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="rOC-iM-TIr"/>
                                 </connections>
                             </switch>
@@ -67,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.52768905879156902" green="1" blue="0.59406439104985009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI">
@@ -82,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="-23"/>
+            <point key="canvasLocation" x="343" y="-42"/>
         </scene>
         <!--Customer Names-->
         <scene sceneID="Na7-eD-5sc">
@@ -112,12 +111,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.251029165808764" green="0.40182330843441266" blue="0.97680455450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.75408679249999999" green="0.71687739815612672" blue="0.25154668904287208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="g6g-fZ-XVX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Customer Names" id="cag-V9-6oi">
@@ -185,7 +184,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.83113775208463481" blue="0.13681472440888809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hsV-ko-Bnj"/>
                     </view>
                     <connections>
@@ -197,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEy-hc-GVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="-23"/>
+            <point key="canvasLocation" x="1757" y="-14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OgU-1W-SPI">
