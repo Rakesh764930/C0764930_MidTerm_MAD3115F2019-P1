@@ -24,14 +24,33 @@ class Singleton: NSObject {
     }
 
 
+    func addNewCust(firstName:String,lastName:String,email:String)  {
+        let c1=custDict.count+1
+        //let c2=Customer(customerID: c1, firstName: <#T##String#>, lastName: <#T##String#>, email: <#T##String#>)
+        
+        
+        
+    }
+    func retCustObj(custId:Int)->Customer?
+    {
+        for(key,value) in custDict
+        {
+            if key==custId
+            {
+                return value
+            }
+        }
+        return nil
+    }
+    
+    func countReturn()->Int
+    {
+        return custDict.count
+    }
     
     
     
-    
-    
-    
-    
-    func createCustObject()  {
+    func defaultCustomer()  {
 
         var cust1 = Customer(customerID : 1, firstName : "Rakesh", lastName : "Kumar", email : "Rakeshkumar92215@gmail.com")
         var cust2 = Customer(customerID : 2, firstName : "Ajeet", lastName : "Singh", email : "ajeets110@gmail.com")
@@ -43,7 +62,17 @@ class Singleton: NSObject {
     func addCustomer(c:Customer){
 
         custDict.updateValue(c, forKey: c.customerId)
+        
 }
+    func printCustData(){
+        for key in custDict.values
+        {
+            print(key.Customer.Fullname)
+        }
+    }
+    
+    
+    
     }
 
     
