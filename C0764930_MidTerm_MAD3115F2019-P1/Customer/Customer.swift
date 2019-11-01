@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer : IDisplay{
+class Customer {
     //  Variable declaration
     var customerId : Int
     var firstName : String

@@ -76,13 +76,13 @@
 				9B11A4AC236A75040036E84F /* Customer */,
 				9B11A456236A583C0036E84F /* AppDelegate.swift */,
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
-				9BEE9EF0236B90DD008B0D1C /* CustTableViewController.swift */,
-				9BEE9EEE236B8EFA008B0D1C /* Singleton.swift */,
 				9B11A45A236A583C0036E84F /* Main.storyboard */,
 				9B11A45D236A583C0036E84F /* Assets.xcassets */,
 				9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */,
 				9B11A462236A583C0036E84F /* Info.plist */,
 				9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */,
+				9BEE9EF0236B90DD008B0D1C /* CustTableViewController.swift */,
+				9BEE9EEE236B8EFA008B0D1C /* Singleton.swift */,
 			);
 			path = "C0764930_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
