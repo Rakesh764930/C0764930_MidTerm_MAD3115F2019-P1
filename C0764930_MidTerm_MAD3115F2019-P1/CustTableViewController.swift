@@ -12,8 +12,9 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
     
     
     
+    @IBOutlet weak var tblCustomer: UITableView!
     
-    
+    var tempSingleton=Singleton.getObject()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         <#code#>
