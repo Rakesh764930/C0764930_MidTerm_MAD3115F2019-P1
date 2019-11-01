@@ -40,18 +40,7 @@ class ViewController: UIViewController {
         
         if usnm.count > 7
         {
-            if outletRemember.isOn
-            {
-                
-                UserDefaults.standard.set(usnm, forKey: "usnm")
-                UserDefaults.standard.set(pswd, forKey: "pswd")
-                
-            }
-            else{
-                UserDefaults.standard.removeObject(forKey: "usnm")
-                UserDefaults.standard.removeObject(forKey: "pswd")
-            }
-        
+            
         if usnm == "Rks764930"
         {
             if pswd == "4141"
@@ -80,7 +69,22 @@ class ViewController: UIViewController {
     
 }
 
-
+    @IBAction func RememberMe(_ sender: UISwitch) {
+        if outletRemember.isOn
+        {
+            let usnm=txtUsername.text!
+            let pswd=txtPassword.text!
+            UserDefaults.standard.set(usnm, forKey: "usnm")
+            UserDefaults.standard.set(pswd, forKey: "pswd")
+            
+        }
+        else{
+            UserDefaults.standard.removeObject(forKey: "usnm")
+            UserDefaults.standard.removeObject(forKey: "pswd")
+        }
+        
+    }
+    
 }
         
  
