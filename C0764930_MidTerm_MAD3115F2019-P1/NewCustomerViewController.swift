@@ -15,6 +15,8 @@ class NewCustomerViewController: UIViewController {
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
+    let newCust=Singleton.getObject()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,12 @@ class NewCustomerViewController: UIViewController {
     
 
     @IBAction func btnAddCust(_ sender: UIButton) {
+        
+        let nfName=txtFirstName.text!
+        let nlName=txtLastName.text!
+        let nemail=txtEmail.text!
+        
+        newCust.addNewCust(fName: nfName, lName: nlName, cEmail: nemail)
     }
     
 

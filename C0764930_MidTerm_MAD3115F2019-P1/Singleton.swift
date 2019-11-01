@@ -24,7 +24,7 @@ class Singleton: NSObject {
     }
 
 
-    func addNewCust(cId:Int ,fName:String,lName:String,cEmail:String)  {
+    func addNewCust(fName:String,lName:String,cEmail:String)  {
         let c1=custDict.count+1
         let c2=Customer(customerID: c1, firstName: fName, lastName:lName , email: cEmail)
         
