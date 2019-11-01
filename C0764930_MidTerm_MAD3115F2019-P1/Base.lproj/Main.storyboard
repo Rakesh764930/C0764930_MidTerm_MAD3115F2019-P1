@@ -37,6 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="swRememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="rOC-iM-TIr"/>
+                                    <action selector="switchRemember:" destination="BYZ-38-t0r" eventType="valueChanged" id="1YU-hv-9AH"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-I2-wFn">
@@ -71,6 +72,7 @@
                         <barButtonItem key="backBarButtonItem" title="logout" id="lxa-lw-ISb"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="outletRemember" destination="rp5-6l-tHC" id="eFP-VT-VB6"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
                         <segue destination="fcn-58-NDJ" kind="show" identifier="MoveToCustomer" id="h1f-WE-QQV"/>
@@ -78,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="-49"/>
+            <point key="canvasLocation" x="161" y="-48"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Na7-eD-5sc">

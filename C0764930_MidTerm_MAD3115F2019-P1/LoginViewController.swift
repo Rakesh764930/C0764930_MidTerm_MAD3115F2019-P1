@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+   
     @IBOutlet weak var outletRemember: UISwitch!
     
     override func viewDidLoad() {
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
         txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
         
-        outletRemember.isOn = true
+      // outletRemember.isOn = true
         
     }
 
@@ -67,10 +68,12 @@ class ViewController: UIViewController {
     
 }
 
-    @IBAction func switchRememberMe(_ sender: UISwitch) {
+
         
         
-        if outletRemember.isOn
+    @IBAction func switchRemember(_ sender: Any) {
+    
+    if outletRemember.isOn
         {
             let newUsername = txtUsername.text!
             let newPassword = txtPassword.text!
