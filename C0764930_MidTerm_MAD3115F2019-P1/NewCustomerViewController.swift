@@ -30,6 +30,8 @@ class NewCustomerViewController: UIViewController {
         let nemail=txtEmail.text!
         
         newCust.addNewCust(fName: nfName, lName: nlName, cEmail: nemail)
+         performSegue(withIdentifier: "Add Successful", sender: nil)
+        
     }
     
 
