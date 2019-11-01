@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
         txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
         
-        
+        outletRemember.isOn=true
         
     }
 

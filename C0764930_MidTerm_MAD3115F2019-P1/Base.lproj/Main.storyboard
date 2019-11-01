@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="-42"/>
+            <point key="canvasLocation" x="336" y="-15"/>
         </scene>
         <!--Customer Names-->
         <scene sceneID="Na7-eD-5sc">
@@ -127,11 +127,12 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tblCustomer" destination="luH-4e-5EA" id="m62-EH-4TU"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="zD0-Sd-W1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmo-H3-Jdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="-23"/>
+            <point key="canvasLocation" x="1058" y="-12"/>
         </scene>
         <!--New Customer View Controller-->
         <scene sceneID="iR4-bH-QUr">
@@ -211,7 +212,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y58-ut-BaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="-23"/>
+            <point key="canvasLocation" x="-413" y="-33"/>
         </scene>
     </scenes>
     <resources>
@@ -219,5 +220,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h1f-WE-QQV"/>
+        <segue reference="zD0-Sd-W1M"/>
     </inferredMetricsTieBreakers>
 </document>
