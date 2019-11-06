@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-pO-xHS">
@@ -84,7 +84,7 @@
             <objects>
                 <viewController id="fcn-58-NDJ" customClass="CustTableViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eyh-qv-hnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Customer Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glb-Yg-aRs">
@@ -116,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="g6g-fZ-XVX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Customer Names" id="cag-V9-6oi">
-                        <barButtonItem key="backBarButtonItem" title="Logout" id="sFD-DQ-ed9"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="sFD-DQ-ed9"/>
                         <barButtonItem key="rightBarButtonItem" title="ADD" id="hL5-k3-uaK">
                             <connections>
                                 <action selector="AddNewCust:" destination="fcn-58-NDJ" id="Ucr-wd-3zM"/>
@@ -304,7 +304,7 @@
         <image name="Vertical_FullColour.jpg" width="250" height="305"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ce2-ot-Cq6"/>
+        <segue reference="h1f-WE-QQV"/>
         <segue reference="zD0-Sd-W1M"/>
     </inferredMetricsTieBreakers>
 </document>
