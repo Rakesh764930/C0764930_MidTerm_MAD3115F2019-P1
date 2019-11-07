@@ -8,9 +8,11 @@
 
 import UIKit
 
-class CustomerBillViewController: UIViewController {
+class CustomerBillViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
     @IBOutlet weak var tblBillDetail: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
