@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Customer</key>
+	<array>
+		<dict>
+			<key>customerID</key>
+			<integer>1</integer>
+			<key>firstName</key>
+			<string>Rakesh</string>
+			<key>lastName</key>
+			<string>Kumar</string>
+			<key>email</key>
+			<string>Rakeshkumar92215@gmail.com</string>
+		</dict>
+		<dict>
+			<key>customerID</key>
+			<integer>2</integer>
+			<key>firstName</key>
+			<string>Ajeet</string>
+			<key>lastName</key>
+			<string>Singh</string>
+			<key>email</key>
+			<string>ajeets110@gmail.com</string>
+		</dict>
+		<dict>
+			<key>customerID</key>
+			<integer>3</integer>
+			<key>firstName</key>
+			<string>Gurpreet</string>
+			<key>lastName</key>
+			<string>Singh</string>
+			<key>email</key>
+			<string>gurpreetsingh26@gmail.com</string>
+		</dict>
+		<dict>
+			<key>customerID</key>
+			<integer>4</integer>
+			<key>firstName</key>
+			<string>Kuldeep</string>
+			<key>lastName</key>
+			<string>Bamrah</string>
+			<key>email</key>
+			<string>Kuldeep0@gmail.com</string>
+		</dict>
+		<dict>
+			<key>customerID</key>
+			<integer>5</integer>
+			<key>firstName</key>
+			<string>Ritik</string>
+			<key>lastName</key>
+			<string>Jagpal</string>
+			<key>email</key>
+			<string>Ritikjagpal123@gmail.com</string>
+		</dict>
+	</array>
+</dict>
+</plist>

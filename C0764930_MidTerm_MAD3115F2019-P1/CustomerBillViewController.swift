@@ -8,16 +8,8 @@
 
 import UIKit
 
-class CustomerBillViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-
+class CustomerBillViewController: UIViewController  {
+   
     @IBOutlet weak var tblBillDetail: UITableView!
     
     
@@ -27,6 +19,19 @@ class CustomerBillViewController: UIViewController , UITableViewDelegate , UITab
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
+    
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//         //  <#code#>
+//       }
+//
+//       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//         //  <#code#>
+//       }
+//
 
     /*
     // MARK: - Navigation
