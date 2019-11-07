@@ -46,7 +46,17 @@ class ViewController: UIViewController {
             if pswd == "4141"
             {
                 print("Login Successful")
-                performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+              //  performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+                
+
+                let newStBd = UIStoryboard(name: "Main", bundle: nil)
+                let custTableVC = newStBd.instantiateViewController(withIdentifier: "custTableVC") as! CustTableViewController
+                navigationController?.pushViewController(custTableVC, animated: true)
+                
+                
+                
+                
+                
                 
             }else{
                 print("Incorrect Password")

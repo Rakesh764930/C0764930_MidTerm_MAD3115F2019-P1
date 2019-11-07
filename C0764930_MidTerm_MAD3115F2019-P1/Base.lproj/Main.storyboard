@@ -72,7 +72,6 @@
                         <outlet property="outletRemember" destination="rp5-6l-tHC" id="7Lp-sS-jeY"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
-                        <segue destination="fcn-58-NDJ" kind="show" identifier="MoveToCustomer" id="h1f-WE-QQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,9 +81,9 @@
         <!--Customer Names-->
         <scene sceneID="Na7-eD-5sc">
             <objects>
-                <viewController id="fcn-58-NDJ" customClass="CustTableViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="custTableVC" id="fcn-58-NDJ" customClass="CustTableViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eyh-qv-hnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Customer Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glb-Yg-aRs">
@@ -126,7 +125,6 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tblCustomer" destination="luH-4e-5EA" id="m62-EH-4TU"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="zD0-Sd-W1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmo-H3-Jdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="1551" y="-29"/>
         </scene>
-        <!--View Controller-->
+        <!--Customer Bill View Controller-->
         <scene sceneID="ccW-6o-KHk">
             <objects>
-                <viewController id="wB4-xy-zfb" sceneMemberID="viewController">
+                <viewController id="wB4-xy-zfb" customClass="CustomerBillViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdF-RP-VVX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,13 +241,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxx-oe-whM">
-                                <rect key="frame" x="122" y="174" width="290" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Customer Bill Info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67k-49-Nkx">
                                 <rect key="frame" x="1" y="213" width="406" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -272,14 +263,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxx-oe-whM">
+                                <rect key="frame" x="122" y="172" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="FGg-pV-tsv"/>
                     </view>
+                    <connections>
+                        <outlet property="tbl" destination="stp-WW-EbW" id="nsR-L1-SPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Kv-Qa-idz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2250.7246376811595" y="-27.455357142857142"/>
+            <point key="canvasLocation" x="2251" y="-30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OgU-1W-SPI">
@@ -303,8 +304,4 @@
     <resources>
         <image name="Vertical_FullColour.jpg" width="250" height="305"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="h1f-WE-QQV"/>
-        <segue reference="zD0-Sd-W1M"/>
-    </inferredMetricsTieBreakers>
 </document>
