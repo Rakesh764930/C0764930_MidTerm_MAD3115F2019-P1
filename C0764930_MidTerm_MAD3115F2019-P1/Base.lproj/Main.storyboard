@@ -11,7 +11,7 @@
         <!--Login Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmJ-Jf-wnC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vertical_FullColour.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="etM-ca-fio">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vertical_FullColour" translatesAutoresizingMaskIntoConstraints="NO" id="etM-ca-fio">
                                 <rect key="frame" x="53" y="94" width="263" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -72,6 +72,7 @@
                         <outlet property="outletRemember" destination="rp5-6l-tHC" id="7Lp-sS-jeY"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
+                        <outlet property="txtusername" destination="gDL-pO-xHS" id="roZ-4p-mXL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -302,6 +303,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Vertical_FullColour.jpg" width="250" height="305"/>
+        <image name="Vertical_FullColour" width="250" height="305"/>
     </resources>
 </document>

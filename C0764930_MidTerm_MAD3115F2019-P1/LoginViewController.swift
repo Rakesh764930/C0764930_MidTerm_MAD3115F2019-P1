@@ -11,102 +11,77 @@ import UIKit
 class LoginViewController: UIViewController {
  //      o u t l e s t s
     
+    
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
    
     @IBOutlet weak var outletRemember: UISwitch!
-    
-    var login = [Any]()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let gblData = Singleton.getObject()
-        gblData.defaultCustomer()
-        // Do any additional setup after loading the view.
-  
-        txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
-        txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
         
-        outletRemember.isOn=true
-        //loginPlistFile()
-    }
-
-    
-    
-    
-    
-    @IBAction func btnLogin(_ sender: UIButton)
-    {
-        let usnm=txtUsername.text!
-        let pswd=txtPassword.text!
-        
-        if usnm.count > 7
-        {
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            let gblData = Singleton.getObject()
+            gblData.defaultCustomer()
+            // Do any additional setup after loading the view.
+      
+            txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
+            txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
             
-       if  verifyUsnmPswd(usnm: usnm, pswd: pswd) {
+            
+            
+        }
 
-                print("Login Successful")
-              //  performSegue(withIdentifier: "MoveToCustomer", sender: nil)
-                
-
-                let newStBd = UIStoryboard(name: "Main", bundle: nil)
-                let custTableVC = newStBd.instantiateViewController(withIdentifier: "custTableVC") as! CustTableViewController
-                navigationController?.pushViewController(custTableVC, animated: true)
-                
-                
-                
-                
-                
-                
-            }else{
-                print("Incorrect Password")
-                 }
-        }else{
-            print("Incorrect Username")
-            }
         
-    }
-    else{
-    let alert = UIAlertController(title: "Invalid Username", message: "Please enter a valid Username", preferredStyle: .alert)
-    
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-    alert.addAction(UIAlertAction(title: "Ignore", style: .destructive, handler: nil))
-    
-    self.present(alert, animated: true)
-    
-    }
-    
-}
-  
-
-func verifyUsnmPswd(usnm : String , pswd : String) -> Bool{
-       
-       for i in login{
-           if (i.usnm == usnm && i.pswd == pswd) {
-               return true
-           }
-       }
-       return false
-   }
-    
-
-    @IBAction func RememberMe(_ sender: UISwitch) {
-        if outletRemember.isOn
+        
+        
+        @IBAction func btnLogin(_ sender: UIButton)
         {
             let usnm=txtUsername.text!
             let pswd=txtPassword.text!
-            UserDefaults.standard.set(usnm, forKey: "usnm")
-            UserDefaults.standard.set(pswd, forKey: "pswd")
+            
+            if usnm.count > 7
+            {
+                if outletRemember.isOn
+                {
+                    
+                    UserDefaults.standard.set(usnm, forKey: "usnm")
+                    UserDefaults.standard.set(pswd, forKey: "pswd")
+                    
+                }
+                else{
+                    UserDefaults.standard.removeObject(forKey: "usnm")
+                    UserDefaults.standard.removeObject(forKey: "pswd")
+                }
+            
+            if usnm == "Rks764930"
+            {
+                if pswd == "4141"
+                {
+                    print("Login Successful")
+                    performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+                    
+                }else{
+                    print("Incorrect Password")
+                     }
+            }else{
+                print("Incorrect Username")
+                }
             
         }
         else{
-            UserDefaults.standard.removeObject(forKey: "usnm")
-            UserDefaults.standard.removeObject(forKey: "pswd")
+        let alert = UIAlertController(title: "Invalid Username", message: "Please enter a valid Username", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ignore", style: .destructive, handler: nil))
+        
+        self.present(alert, animated: true)
+        
         }
         
     }
-    
-}
-        
+
+
+    }
+            
 
     

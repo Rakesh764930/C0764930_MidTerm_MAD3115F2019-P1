@@ -21,7 +21,6 @@
 		9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */; };
 		9B655CE72373AAB10013E483 /* Customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CE62373AAB10013E483 /* Customer.plist */; };
 		9B655CEA2373AF1D0013E483 /* Bill.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CE92373AF1D0013E483 /* Bill.plist */; };
-		9B655CEC2373B4A90013E483 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B655CEB2373B4A90013E483 /* Main.swift */; };
 		9B655CEE2373BEC60013E483 /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CED2373BEC60013E483 /* login.plist */; };
 		9BB9B6C1236CBA5C009893EC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9B6C0236CBA5C009893EC /* Singleton.swift */; };
 		9BEE9F13236BC0A6008B0D1C /* CustTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */; };
@@ -45,7 +44,6 @@
 		9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBillViewController.swift; sourceTree = "<group>"; };
 		9B655CE62373AAB10013E483 /* Customer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Customer.plist; sourceTree = "<group>"; };
 		9B655CE92373AF1D0013E483 /* Bill.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bill.plist; sourceTree = "<group>"; };
-		9B655CEB2373B4A90013E483 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		9B655CED2373BEC60013E483 /* login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = login.plist; sourceTree = "<group>"; };
 		9BB9B6C0236CBA5C009893EC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustTableViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				9B11A4AA236A74F00036E84F /* Customer.swift */,
 				9BB9B6C0236CBA5C009893EC /* Singleton.swift */,
-				9B655CEB2373B4A90013E483 /* Main.swift */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
-				9B655CEC2373B4A90013E483 /* Main.swift in Sources */,
 				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
 				9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */,
 				9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */,
