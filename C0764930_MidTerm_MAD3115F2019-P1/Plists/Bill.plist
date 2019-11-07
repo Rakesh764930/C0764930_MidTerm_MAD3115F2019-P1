@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bills</key>
+	<array>
+		<dict>
+			<key>customerID</key>
+			<integer>1</integer>
+			<key>billId</key>
+			<string>In01</string>
+			<key>billDate</key>
+			<date>2019-11-07T02:15:20Z</date>
+			<key>providerName</key>
+			<string>Rogers</string>
+			<key>gbUsed</key>
+			<integer>450</integer>
+			<key>billAmount</key>
+			<real>60.5</real>
+			<key>billType</key>
+			<string>Internet</string>
+		</dict>
+		<dict>
+			<key>customerID</key>
+			<integer>2</integer>
+			<key>billId</key>
+			<string>M001</string>
+			<key>billDate</key>
+			<date>2019-11-07T02:15:20Z</date>
+			<key>manufacturerName</key>
+			<string>Galaxy</string>
+			<key>planName</key>
+			<string>Prepaid Talk</string>
+			<key>phoneNumber</key>
+			<integer>6464647484</integer>
+			<key>internetUsed</key>
+			<integer>5</integer>
+			<key>minutesUsed</key>
+			<integer>356</integer>
+			<key>billAmount</key>
+			<real>54.35</real>
+			<key>billType</key>
+			<string>Mobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>

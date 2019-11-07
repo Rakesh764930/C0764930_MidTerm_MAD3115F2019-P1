@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
  //      o u t l e s t s
     
     @IBOutlet weak var txtUsername: UITextField!
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var outletRemember: UISwitch!
     
-    
+    var login = [Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
         let gblData = Singleton.getObject()
@@ -27,9 +27,10 @@ class ViewController: UIViewController {
         txtPassword.text = UserDefaults.standard.string(forKey: "pswd")
         
         outletRemember.isOn=true
-        
+        //loginPlistFile()
     }
 
+    
     
     
     
@@ -41,10 +42,8 @@ class ViewController: UIViewController {
         if usnm.count > 7
         {
             
-        if usnm == "Rks764930"
-        {
-            if pswd == "4141"
-            {
+       if  verifyUsnmPswd(usnm: usnm, pswd: pswd) {
+
                 print("Login Successful")
               //  performSegue(withIdentifier: "MoveToCustomer", sender: nil)
                 
@@ -78,6 +77,18 @@ class ViewController: UIViewController {
     }
     
 }
+  
+
+func verifyUsnmPswd(usnm : String , pswd : String) -> Bool{
+       
+       for i in login{
+           if (i.usnm == usnm && i.pswd == pswd) {
+               return true
+           }
+       }
+       return false
+   }
+    
 
     @IBAction func RememberMe(_ sender: UISwitch) {
         if outletRemember.isOn
@@ -97,5 +108,5 @@ class ViewController: UIViewController {
     
 }
         
- 
+
     

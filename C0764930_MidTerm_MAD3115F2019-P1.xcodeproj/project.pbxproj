@@ -12,7 +12,6 @@
 		9B11A45C236A583C0036E84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45A236A583C0036E84F /* Main.storyboard */; };
 		9B11A45E236A583C0036E84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45D236A583C0036E84F /* Assets.xcassets */; };
 		9B11A461236A583C0036E84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */; };
-		9B11A4A9236A66F30036E84F /* Vertical_FullColour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */; };
 		9B11A4AB236A74F00036E84F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A4AA236A74F00036E84F /* Customer.swift */; };
 		9B2AB58A236B820300276CC2 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB589236B820300276CC2 /* Bill.swift */; };
 		9B2AB58C236B823700276CC2 /* HydroBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58B236B823700276CC2 /* HydroBill.swift */; };
@@ -20,7 +19,10 @@
 		9B2AB590236B82D200276CC2 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB58F236B82D200276CC2 /* MobileBill.swift */; };
 		9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AB592236B836300276CC2 /* IDisplay.swift */; };
 		9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */; };
-		9B655CE72373AAB10013E483 /* customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CE62373AAB10013E483 /* customers.plist */; };
+		9B655CE72373AAB10013E483 /* Customer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CE62373AAB10013E483 /* Customer.plist */; };
+		9B655CEA2373AF1D0013E483 /* Bill.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CE92373AF1D0013E483 /* Bill.plist */; };
+		9B655CEC2373B4A90013E483 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B655CEB2373B4A90013E483 /* Main.swift */; };
+		9B655CEE2373BEC60013E483 /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CED2373BEC60013E483 /* login.plist */; };
 		9BB9B6C1236CBA5C009893EC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9B6C0236CBA5C009893EC /* Singleton.swift */; };
 		9BEE9F13236BC0A6008B0D1C /* CustTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */; };
 		9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */; };
@@ -34,7 +36,6 @@
 		9B11A45D236A583C0036E84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B11A460236A583C0036E84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B11A462236A583C0036E84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vertical_FullColour.jpg; sourceTree = "<group>"; };
 		9B11A4AA236A74F00036E84F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B2AB589236B820300276CC2 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9B2AB58B236B823700276CC2 /* HydroBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroBill.swift; sourceTree = "<group>"; };
@@ -42,7 +43,10 @@
 		9B2AB58F236B82D200276CC2 /* MobileBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBill.swift; sourceTree = "<group>"; };
 		9B2AB592236B836300276CC2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBillViewController.swift; sourceTree = "<group>"; };
-		9B655CE62373AAB10013E483 /* customers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = customers.plist; sourceTree = "<group>"; };
+		9B655CE62373AAB10013E483 /* Customer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Customer.plist; sourceTree = "<group>"; };
+		9B655CE92373AF1D0013E483 /* Bill.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bill.plist; sourceTree = "<group>"; };
+		9B655CEB2373B4A90013E483 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		9B655CED2373BEC60013E483 /* login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = login.plist; sourceTree = "<group>"; };
 		9BB9B6C0236CBA5C009893EC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustTableViewController.swift; sourceTree = "<group>"; };
 		9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -78,16 +82,14 @@
 		9B11A455236A583C0036E84F /* C0764930_MidTerm_MAD3115F2019-P1 */ = {
 			isa = PBXGroup;
 			children = (
-				9B2AB588236B7FCC00276CC2 /* Bill */,
-				9B11A4AC236A75040036E84F /* Customer */,
 				9B11A456236A583C0036E84F /* AppDelegate.swift */,
+				9B11A4AC236A75040036E84F /* Customer */,
+				9B2AB588236B7FCC00276CC2 /* Bill */,
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
 				9B11A45A236A583C0036E84F /* Main.storyboard */,
 				9B11A45D236A583C0036E84F /* Assets.xcassets */,
 				9B655CE82373AE310013E483 /* Plists */,
 				9B11A45F236A583C0036E84F /* LaunchScreen.storyboard */,
-				9B11A462236A583C0036E84F /* Info.plist */,
-				9B11A4A8236A66F30036E84F /* Vertical_FullColour.jpg */,
 				9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */,
 				9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */,
 				9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */,
@@ -100,6 +102,7 @@
 			children = (
 				9B11A4AA236A74F00036E84F /* Customer.swift */,
 				9BB9B6C0236CBA5C009893EC /* Singleton.swift */,
+				9B655CEB2373B4A90013E483 /* Main.swift */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -119,7 +122,10 @@
 		9B655CE82373AE310013E483 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				9B655CE62373AAB10013E483 /* customers.plist */,
+				9B11A462236A583C0036E84F /* Info.plist */,
+				9B655CED2373BEC60013E483 /* login.plist */,
+				9B655CE92373AF1D0013E483 /* Bill.plist */,
+				9B655CE62373AAB10013E483 /* Customer.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -183,10 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B11A461236A583C0036E84F /* LaunchScreen.storyboard in Resources */,
-				9B655CE72373AAB10013E483 /* customers.plist in Resources */,
+				9B655CE72373AAB10013E483 /* Customer.plist in Resources */,
 				9B11A45E236A583C0036E84F /* Assets.xcassets in Resources */,
-				9B11A4A9236A66F30036E84F /* Vertical_FullColour.jpg in Resources */,
 				9B11A45C236A583C0036E84F /* Main.storyboard in Resources */,
+				9B655CEE2373BEC60013E483 /* login.plist in Resources */,
+				9B655CEA2373AF1D0013E483 /* Bill.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +208,7 @@
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
+				9B655CEC2373B4A90013E483 /* Main.swift in Sources */,
 				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
 				9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */,
 				9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */,
