@@ -23,7 +23,32 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
         let t1 = sObj.returnCustObj(custId: Int(indexPath.row+1))
         let billCell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath) as! CustomizedTableViewCell
         //tblCell.textLabel?.text = t1?.fullName
+        let tempCell=custBill!.returnBillArray()
+        let bTempCell=tempCell[indexPath.row].billType.rawValue
         
+        if bTempCell.elementsEqual("Mobile")
+        {
+            let tempObj =  tempCell[indexPath.row] as! MobileBill
+            
+            billCell.lblBillType.text = bTempCell
+            billCell.lblBillDate.text = tempObj.billDate
+            billCell.lblBillAmount.text = String(tempObj.billAmount)
+        }
+        if bTempCell.elementsEqual("Interner")
+        {
+            let tempObj =  tempCell[indexPath.row] as! InternetBill
+            billCell.lblBillType.text = bTempCell
+            billCell.lblBillDate.text = tempObj.billDate
+            billCell.lblBillAmount.text = String(tempObj.billAmount)
+        }
+        if bTempCell.elementsEqual("Hydro")
+        {
+            let tempObj =  tempCell[indexPath.row] as! HydroBill
+            billCell.lblBillType.text = bTempCell
+            billCell.lblBillDate.text = tempObj.billDate
+           billCell.lblBillAmount.text = String(tempObj.billAmount)
+        }
+
         return billCell
     }
 

@@ -13,6 +13,7 @@ class CustomizedTableViewCell: UITableViewCell {
     @IBOutlet weak var lblBillID: UILabel!
     @IBOutlet weak var lblBillType: UILabel!
     
+    @IBOutlet weak var lblBillDate: UILabel!
     @IBOutlet weak var lblBillAmount: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -38,14 +38,14 @@ class Customer {
     }
     
     
-    func returnBillArray() -> Array<Bill>
+    func returnBillArray() -> [Bill]
     {
-        var temp : Array<Bill> = []
+        var tBill = [Bill]()
         for i in billDictionary.values
         {
-            temp.append(i)
+            tBill.append(i)
         }
-        return temp
+        return tBill
     }
 
 }
