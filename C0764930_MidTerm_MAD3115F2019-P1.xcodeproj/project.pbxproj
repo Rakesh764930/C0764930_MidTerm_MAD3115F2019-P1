@@ -21,6 +21,9 @@
 		9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */; };
 		9B655CEE2373BEC60013E483 /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CED2373BEC60013E483 /* login.plist */; };
 		9BB9B6C1236CBA5C009893EC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9B6C0236CBA5C009893EC /* Singleton.swift */; };
+		9BE007FB2375E76000E2E33B /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE007FA2375E76000E2E33B /* DateExtension.swift */; };
+		9BE007FD2375E7C800E2E33B /* curency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE007FC2375E7C800E2E33B /* curency.swift */; };
+		9BE007FF2375E80000E2E33B /* int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE007FE2375E80000E2E33B /* int.swift */; };
 		9BEE9F13236BC0A6008B0D1C /* CustTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */; };
 		9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBillViewController.swift; sourceTree = "<group>"; };
 		9B655CED2373BEC60013E483 /* login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = login.plist; sourceTree = "<group>"; };
 		9BB9B6C0236CBA5C009893EC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		9BE007FA2375E76000E2E33B /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		9BE007FC2375E7C800E2E33B /* curency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curency.swift; sourceTree = "<group>"; };
+		9BE007FE2375E80000E2E33B /* int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = int.swift; sourceTree = "<group>"; };
 		9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustTableViewController.swift; sourceTree = "<group>"; };
 		9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +98,9 @@
 				9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */,
 				9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */,
 				9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */,
+				9BE007FA2375E76000E2E33B /* DateExtension.swift */,
+				9BE007FC2375E7C800E2E33B /* curency.swift */,
+				9BE007FE2375E80000E2E33B /* int.swift */,
 				9B11A462236A583C0036E84F /* Info.plist */,
 			);
 			path = "C0764930_MidTerm_MAD3115F2019-P1";
@@ -172,13 +181,16 @@
 				9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */,
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
+				9BE007FD2375E7C800E2E33B /* curency.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
+				9BE007FF2375E80000E2E33B /* int.swift in Sources */,
 				9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */,
 				9B2AB58E236B826300276CC2 /* InternetBill.swift in Sources */,
 				9B655CE52373A8E20013E483 /* CustomerBillViewController.swift in Sources */,
 				9BB9B6C1236CBA5C009893EC /* Singleton.swift in Sources */,
 				9BEE9F13236BC0A6008B0D1C /* CustTableViewController.swift in Sources */,
 				9B2AB58C236B823700276CC2 /* HydroBill.swift in Sources */,
+				9BE007FB2375E76000E2E33B /* DateExtension.swift in Sources */,
 				9B2AB590236B82D200276CC2 /* MobileBill.swift in Sources */,
 				9B11A457236A583C0036E84F /* AppDelegate.swift in Sources */,
 			);
