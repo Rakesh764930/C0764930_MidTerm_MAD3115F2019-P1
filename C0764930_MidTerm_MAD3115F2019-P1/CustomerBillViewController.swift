@@ -12,41 +12,43 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
    
     
     
-   
-    @IBOutlet weak var txtID: UILabel!
-    @IBOutlet weak var txtFullname: UITextField!
-    @IBOutlet weak var txtEname: UITextField!
-    @IBOutlet weak var tblBillDetails: UITableView!
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return  (custBill?.billDictionary.count)!
+    }
     
-    var cust:Customer?=nil
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let t1=sObj.returnCustObj(custId: Int(indexPath.row+1))
+        let billCell = tableView.dequeueReusableCell(withIdentifier: "SingletonCell", for: indexPath)
+        //tblCell.textLabel?.text = t1?.fullName
+        return billCell
+    }
+
+   
+    
+    @IBOutlet weak var lblId: UILabel!
+    @IBOutlet weak var lblFullName: UILabel!
+    @IBOutlet weak var tblBillDetails: UITableView!
+    @IBOutlet weak var lblEmail: UILabel!
+    var sObj=Singleton.getObject()
+    var custBill:Customer?=nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //txtID.text=cust?.customerId
         
-        
-        
+        lblId.text=custBill?.customerId.intToString()
+        lblFullName.text=custBill?.fullName
+        lblEmail.text=custBill?.email
         // Do any additional setup after loading the view.
     }
     
     
     
     
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-           return 1
-       }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return  tempSingleton.countReturn()
-       }
-
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         //  let t1=tempSingleton.returnCustObj(custId: Int(indexPath.row+1))
-         let tblCell = tableView.dequeueReusableCell(withIdentifier: "SingletonCell", for: indexPath)
-         tblCell.textLabel?.text = t1?.fullName
-         return tblCell
-       }
-
+   
 
     /*
     // MARK: - Navigation
