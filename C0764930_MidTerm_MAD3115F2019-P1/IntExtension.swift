@@ -8,22 +8,24 @@
 
 import Foundation
 extension Int{
-    func concatUnits()->String
-    {
-        return "\(self) Units"
-    }
-    func conactGB() ->String
-    {
-        return " \(self) GB"
-    }
-    func concatMin() -> String
-    {
-        return " \(self) Minutes"
-    }
     func intToString() -> String
     {
         return String(self)
     }
+    func internetGbs() ->String
+    {
+        return " \(self) GB"
+    }
+    func hydroUnits()->String
+    {
+        return "\(self) Units"
+    }
+   
+    func minutesEx() -> String
+    {
+        return " \(self) Minutes"
+    }
+    
     
     
 }

@@ -46,6 +46,9 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     
     
+    @IBAction func NewBill(_ sender:UIBarButtonItem) {
+       
+    }
     
     
    
