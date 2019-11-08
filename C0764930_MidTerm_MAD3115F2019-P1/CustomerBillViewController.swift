@@ -21,8 +21,9 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let t1 = sObj.returnCustObj(custId: Int(indexPath.row+1))
-        let billCell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath)
+        let billCell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath) as! CustomizedTableViewCell
         //tblCell.textLabel?.text = t1?.fullName
+        
         return billCell
     }
 

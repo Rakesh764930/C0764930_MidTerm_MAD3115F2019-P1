@@ -23,6 +23,7 @@
 		9B655CEE2373BEC60013E483 /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B655CED2373BEC60013E483 /* login.plist */; };
 		9BB9B6C1236CBA5C009893EC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9B6C0236CBA5C009893EC /* Singleton.swift */; };
 		9BD9C6BE237615F100A6A8E7 /* AddBillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9C6BD237615F100A6A8E7 /* AddBillTableViewController.swift */; };
+		9BD9C6C023761A9400A6A8E7 /* CustomizedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9C6BF23761A9400A6A8E7 /* CustomizedTableViewCell.swift */; };
 		9BEE9F13236BC0A6008B0D1C /* CustTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */; };
 		9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		9B655CED2373BEC60013E483 /* login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = login.plist; sourceTree = "<group>"; };
 		9BB9B6C0236CBA5C009893EC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9BD9C6BD237615F100A6A8E7 /* AddBillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillTableViewController.swift; sourceTree = "<group>"; };
+		9BD9C6BF23761A9400A6A8E7 /* CustomizedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedTableViewCell.swift; sourceTree = "<group>"; };
 		9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustTableViewController.swift; sourceTree = "<group>"; };
 		9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
 				9B5C09392376026600B55378 /* IntExtension.swift */,
 				9B2AB589236B820300276CC2 /* Bill.swift */,
+				9BD9C6BF23761A9400A6A8E7 /* CustomizedTableViewCell.swift */,
 				9B2AB58B236B823700276CC2 /* HydroBill.swift */,
 				9B2AB592236B836300276CC2 /* IDisplay.swift */,
 				9B2AB58D236B826300276CC2 /* InternetBill.swift */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD9C6C023761A9400A6A8E7 /* CustomizedTableViewCell.swift in Sources */,
 				9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */,
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,

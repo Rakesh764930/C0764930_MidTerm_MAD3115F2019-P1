@@ -32,6 +32,20 @@ class Customer {
         self.email = email
       
     }
-
+    func addBill(Bill : Bill)
+    {
+        billDictionary.updateValue(Bill, forKey: Bill.billId)
+    }
+    
+    
+    func returnBillArray() -> Array<Bill>
+    {
+        var temp : Array<Bill> = []
+        for i in billDictionary.values
+        {
+            temp.append(i)
+        }
+        return temp
+    }
 
 }
