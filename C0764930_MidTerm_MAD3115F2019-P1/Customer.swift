@@ -16,7 +16,15 @@ class Customer {
         return firstName + " " + lastName
     }
     var email : String
-    //var billDictionary = Dictionary<Int, Bill>()
+    var billDictionary = [Int:Bill]()
+    
+    init(customerID : Int, firstName : String, lastName : String, email : String, billDictionary : [Int:Bill]){
+          self.customerId = customerID
+          self.firstName = firstName
+          self.lastName = lastName
+          self.email = email
+          self.billDictionary = billDictionary
+      }
     init(customerID : Int, firstName : String, lastName : String, email : String){
         self.customerId = customerID
         self.firstName = firstName

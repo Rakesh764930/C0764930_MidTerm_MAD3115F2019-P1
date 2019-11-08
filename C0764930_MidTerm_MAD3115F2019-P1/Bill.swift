@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bill: IDisplay {
+class Bill:IDisplay {
     
     func display() {
         

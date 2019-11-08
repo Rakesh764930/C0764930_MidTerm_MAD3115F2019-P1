@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class HydroBill: Bill{
+class HydroBill:Bill{
     
     //  Variable declaration
     var agencyName : String

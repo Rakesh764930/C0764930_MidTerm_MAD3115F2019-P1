@@ -10,8 +10,9 @@ import UIKit
 
 class CustomerBillViewController: UIViewController  {
    
-    @IBOutlet weak var tblBillDetail: UITableView!
     
+    
+    @IBOutlet weak var tblBillDetails: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
