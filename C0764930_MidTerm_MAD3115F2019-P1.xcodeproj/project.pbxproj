@@ -91,6 +91,7 @@
 				9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */,
 				9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */,
 				9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */,
+				9B11A462236A583C0036E84F /* Info.plist */,
 			);
 			path = "C0764930_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -119,7 +120,6 @@
 		9B655CE82373AE310013E483 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				9B11A462236A583C0036E84F /* Info.plist */,
 				9B655CED2373BEC60013E483 /* login.plist */,
 				9B655CE92373AF1D0013E483 /* Bill.plist */,
 				9B655CE62373AAB10013E483 /* Customer.plist */,

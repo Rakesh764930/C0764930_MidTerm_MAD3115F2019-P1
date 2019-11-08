@@ -11,11 +11,12 @@ import UIKit
 class LoginViewController: UIViewController {
  //      o u t l e s t s
     
+    @IBOutlet weak var outletRemember: UISwitch!
     
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
    
-    @IBOutlet weak var outletRemember: UISwitch!
+   
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -57,9 +58,14 @@ class LoginViewController: UIViewController {
                 if pswd == "4141"
                 {
                     print("Login Successful")
-                    performSegue(withIdentifier: "MoveToCustomer", sender: nil)
-                    
-                }else{
+                
+                //performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+//                    let newStBd = UIStoryboard(name: "Main", bundle: nil)
+//                           let CustTableVc = newStBd.instantiateViewController(withIdentifier: "CustTableVc") as! CustTableViewController
+//                           navigationController?.pushViewController(CustTableVc, animated: true)
+//
+                }
+                else{
                     print("Incorrect Password")
                      }
             }else{

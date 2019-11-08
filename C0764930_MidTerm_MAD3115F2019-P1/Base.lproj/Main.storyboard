@@ -33,9 +33,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="RememberMe:" destination="BYZ-38-t0r" eventType="valueChanged" id="xbv-38-WrP"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-I2-wFn">
                                 <rect key="frame" x="114" y="406" width="192" height="21"/>
@@ -55,6 +52,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmJ-Jf-wnC"/>
+                                    <segue destination="fcn-58-NDJ" kind="show" id="pGy-8d-CPF"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vertical_FullColour" translatesAutoresizingMaskIntoConstraints="NO" id="etM-ca-fio">
@@ -65,14 +63,16 @@
                         <color key="backgroundColor" red="0.52768905879156902" green="1" blue="0.59406439104985009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="IM9-ft-fFJ"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Login Screen" id="ubm-dw-fcI">
                         <barButtonItem key="backBarButtonItem" title="logout" id="lxa-lw-ISb"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="outletRemember" destination="rp5-6l-tHC" id="7Lp-sS-jeY"/>
+                        <outlet property="outletRemember" destination="rp5-6l-tHC" id="9qF-kQ-ueC"/>
                         <outlet property="txtPassword" destination="c47-Im-iv4" id="LLy-I7-mBH"/>
                         <outlet property="txtUsername" destination="gDL-pO-xHS" id="fu1-bf-J5x"/>
-                        <outlet property="txtusername" destination="gDL-pO-xHS" id="roZ-4p-mXL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,7 +84,7 @@
             <objects>
                 <viewController storyboardIdentifier="custTableVC" id="fcn-58-NDJ" customClass="CustTableViewController" customModule="C0764930_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eyh-qv-hnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Customer Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glb-Yg-aRs">
@@ -95,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="luH-4e-5EA">
-                                <rect key="frame" x="10" y="217" width="394" height="559"/>
+                                <rect key="frame" x="18" y="219" width="394" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -305,4 +305,7 @@
     <resources>
         <image name="Vertical_FullColour" width="250" height="305"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pGy-8d-CPF"/>
+    </inferredMetricsTieBreakers>
 </document>
