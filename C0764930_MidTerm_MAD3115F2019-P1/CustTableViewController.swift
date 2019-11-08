@@ -52,8 +52,8 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
                           let newStBd = UIStoryboard(name: "Main", bundle: nil)
-                                   let CustTableVc = newStBd.instantiateViewController(withIdentifier: "CustomerBillVC") as! CustomerBillViewController
-                                   navigationController?.pushViewController(CustTableVc, animated: true)
+                                   let CustomerBillVc = newStBd.instantiateViewController(withIdentifier: "CustomerBillVC") as! CustomerBillViewController
+        CustomerBillVc.custBill = tempSingleton.returnCustObj(custId: indexPath.row+1); self.navigationController?.pushViewController(CustomerBillVc, animated: true)
         
         
         

@@ -11,7 +11,7 @@ import UIKit
 class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
    
     
-    
+    var custBill : Customer? = nil
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -20,8 +20,8 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let t1=sObj.returnCustObj(custId: Int(indexPath.row+1))
-        let billCell = tableView.dequeueReusableCell(withIdentifier: "SingletonCell", for: indexPath)
+        let t1 = sObj.returnCustObj(custId: Int(indexPath.row+1))
+        let billCell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath)
         //tblCell.textLabel?.text = t1?.fullName
         return billCell
     }
@@ -33,7 +33,7 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
     @IBOutlet weak var tblBillDetails: UITableView!
     @IBOutlet weak var lblEmail: UILabel!
     var sObj=Singleton.getObject()
-    var custBill:Customer?=nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
