@@ -30,8 +30,10 @@ class NewCustomerViewController: UIViewController {
         let nemail=txtEmail.text!
         
         newCust.addNewCust(fName: nfName, lName: nlName, cEmail: nemail)
-         performSegue(withIdentifier: "Add Successful", sender: nil)
-        
+         //performSegue(withIdentifier: "Add Successful", sender: nil)
+         let sb1 = UIStoryboard(name: "Main", bundle: nil)
+             let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! NewCustomerViewController
+           navigationController?.pushViewController(NewCustomerVC, animated: true)
     }
     
     // S e t t i n g   B a c k g ro  u n d     C o l o r

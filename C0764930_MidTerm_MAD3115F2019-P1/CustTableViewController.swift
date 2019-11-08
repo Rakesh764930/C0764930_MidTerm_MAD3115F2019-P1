@@ -41,6 +41,7 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
   
     @IBAction func AddNewCust(_ sender: UIBarButtonItem) {
         
+        
         let newStBd = UIStoryboard(name: "Main", bundle: nil)
         let NewCustVC = newStBd.instantiateViewController(withIdentifier: "NewCustVC") as! NewCustomerViewController
         navigationController?.pushViewController(NewCustVC, animated: true)
@@ -49,12 +50,19 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           if #available(iOS 13.0, *) {
-               let stb2 = (storyboard?.instantiateViewController(identifier: "CustomerBillVC") as? CustomerBillViewController)!
-               self.navigationController?.pushViewController(stb2, animated: true)
-           } else {
-               // Fallback on earlier versions
-           }
+        
+                          let newStBd = UIStoryboard(name: "Main", bundle: nil)
+                                   let CustTableVc = newStBd.instantiateViewController(withIdentifier: "CustomerBillVC") as! CustomerBillViewController
+                                   navigationController?.pushViewController(CustTableVc, animated: true)
+        
+        
+        
+//           if #available(iOS 13.0, *) {
+//               let stb2 = (storyboard?.instantiateViewController(identifier: "CustomerBillVC") as? CustomerBillViewController)!
+//               self.navigationController?.pushViewController(stb2, animated: true)
+//           } else {
+//               // Fallback on earlier versions
+//           }
        }
     /*
     // MARK: - Navigation
