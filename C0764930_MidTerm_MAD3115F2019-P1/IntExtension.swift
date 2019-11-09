@@ -12,10 +12,7 @@ extension Int{
     {
         return String(self)
     }
-    func internetGbs() ->String
-    {
-        return " \(self) GB"
-    }
+    
     func hydroUnits()->String
     {
         return "\(self) Units"
@@ -25,7 +22,6 @@ extension Int{
     {
         return " \(self) Minutes"
     }
-    
     
     
 }

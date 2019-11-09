@@ -29,14 +29,15 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
         if bTempCell.elementsEqual("Mobile")
         {
             let tempObj =  tempCell[indexPath.row] as! MobileBill
-            
+            billCell.lblBillID.text=String(tempObj.billId)
             billCell.lblBillType.text = bTempCell
             billCell.lblBillDate.text = tempObj.billDate
             billCell.lblBillAmount.text = String(tempObj.billAmount)
         }
-        if bTempCell.elementsEqual("Interner")
+        if bTempCell.elementsEqual("Internet")
         {
             let tempObj =  tempCell[indexPath.row] as! InternetBill
+            billCell.lblBillID.text=String(tempObj.billId)
             billCell.lblBillType.text = bTempCell
             billCell.lblBillDate.text = tempObj.billDate
             billCell.lblBillAmount.text = String(tempObj.billAmount)
@@ -44,6 +45,7 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
         if bTempCell.elementsEqual("Hydro")
         {
             let tempObj =  tempCell[indexPath.row] as! HydroBill
+            billCell.lblBillID.text=String(tempObj.billId)
             billCell.lblBillType.text = bTempCell
             billCell.lblBillDate.text = tempObj.billDate
            billCell.lblBillAmount.text = String(tempObj.billAmount)
@@ -64,14 +66,27 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
         super.viewDidLoad()
 
         //txtID.text=cust?.customerId
+        tblBillDetails.delegate=self
+        tblBillDetails.dataSource=self
         
         lblId.text=custBill?.customerId.intToString()
         lblFullName.text=custBill?.fullName
         lblEmail.text=custBill?.email
         // Do any additional setup after loading the view.
     }
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        tblBillDetails.reloadData()
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 160
+       }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          let sb = UIStoryboard(name: "Main", bundle: nil)
+              let billDetailVC = sb.instantiateViewController(withIdentifier: "billDetailVC") as! BillDetailsViewController
+              let tempArray = custBill!.returnBillArray()
+              billDetailVC.billObject = tempArray[indexPath.row]
+              navigationController?.pushViewController(billDetailVC, animated: true)
+    }
     @IBAction func NewBill(_ sender:UIBarButtonItem) {
        
     }

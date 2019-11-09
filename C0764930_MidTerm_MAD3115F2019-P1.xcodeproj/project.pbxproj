@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0E95C0237634490067EF6A /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E95BF237634490067EF6A /* BillDetailsViewController.swift */; };
+		9B0E95C2237645F10067EF6A /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E95C1237645F10067EF6A /* FloatExtension.swift */; };
 		9B11A457236A583C0036E84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A456236A583C0036E84F /* AppDelegate.swift */; };
 		9B11A459236A583C0036E84F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11A458236A583C0036E84F /* LoginViewController.swift */; };
 		9B11A45C236A583C0036E84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11A45A236A583C0036E84F /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B0E95BF237634490067EF6A /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		9B0E95C1237645F10067EF6A /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
 		9B11A453236A583C0036E84F /* C0764930_MidTerm_MAD3115F2019-P1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C0764930_MidTerm_MAD3115F2019-P1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B11A456236A583C0036E84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B11A458236A583C0036E84F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				9B11A458236A583C0036E84F /* LoginViewController.swift */,
 				9B5C09392376026600B55378 /* IntExtension.swift */,
 				9B2AB589236B820300276CC2 /* Bill.swift */,
+				9B0E95C1237645F10067EF6A /* FloatExtension.swift */,
 				9BD9C6BF23761A9400A6A8E7 /* CustomizedTableViewCell.swift */,
 				9B2AB58B236B823700276CC2 /* HydroBill.swift */,
 				9B2AB592236B836300276CC2 /* IDisplay.swift */,
@@ -100,6 +105,7 @@
 				9BEE9F12236BC0A6008B0D1C /* CustTableViewController.swift */,
 				9BEE9F14236BC379008B0D1C /* NewCustomerViewController.swift */,
 				9B655CE42373A8E20013E483 /* CustomerBillViewController.swift */,
+				9B0E95BF237634490067EF6A /* BillDetailsViewController.swift */,
 				9BD9C6BD237615F100A6A8E7 /* AddBillTableViewController.swift */,
 				9B11A462236A583C0036E84F /* Info.plist */,
 			);
@@ -179,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD9C6C023761A9400A6A8E7 /* CustomizedTableViewCell.swift in Sources */,
+				9B0E95C2237645F10067EF6A /* FloatExtension.swift in Sources */,
 				9BEE9F15236BC379008B0D1C /* NewCustomerViewController.swift in Sources */,
+				9B0E95C0237634490067EF6A /* BillDetailsViewController.swift in Sources */,
 				9B2AB593236B836300276CC2 /* IDisplay.swift in Sources */,
 				9B2AB58A236B820300276CC2 /* Bill.swift in Sources */,
 				9B11A4AB236A74F00036E84F /* Customer.swift in Sources */,
