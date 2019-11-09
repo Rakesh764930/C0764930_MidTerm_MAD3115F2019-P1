@@ -12,4 +12,8 @@ extension Float{
     {
         return " \(self) GB"
     }
+    func amountString()->String
+    {
+        return "$ \(self) "
+    }
 }

@@ -34,7 +34,8 @@ var billObject: Bill? = nil
         txtBillId.text = billObject?.billId.intToString()
         txtBillType.text = billObject?.billType.rawValue
         txtBillDate.text = billObject?.billDate
-        txtBillAmount.text=billObject?.
+        
+      
         
         // Do any additional setup after loading the view.
     
@@ -45,6 +46,7 @@ var billObject: Bill? = nil
         
         
         if billObject!.billType.rawValue == "Mobile"{
+            
             
             lblNew1.isHidden = false
             lblNew1.text = "Manufacturer Name"
@@ -58,18 +60,22 @@ var billObject: Bill? = nil
             lblNew4.isHidden = false
             lblNew4.text = "Internet Used"
             
-            let m = billObject as! MobileBill
+            let m1 = billObject as! MobileBill
             txtNew1.isHidden = false
-            txtNew1.text = m.manufacturerName
+            txtNew1.text = m1.manufacturerName
             
             txtNew2.isHidden = false
-            txtNew2.text = m.planName
+            txtNew2.text = m1.planName
             
             txtNew3.isHidden = false
-            txtNew3.text = m.minutesUsed.intToString()
+            txtNew3.text = m1.minutesUsed.intToString()
             
             txtNew4.isHidden = false
-            txtNew4.text = m.internetUsed.internetGbs()
+            txtNew4.text = m1.internetUsed.internetGbs()
+            txtBillAmount.isHidden=false
+            txtBillAmount.text=m1.billAmount.amountString()
+           
+            
         }
         
         if billObject!.billType.rawValue == "Internet"{
@@ -80,12 +86,14 @@ var billObject: Bill? = nil
             lblNew2.isHidden = false
             lblNew2.text = "Data Used"
             
-            let i = billObject as! InternetBill
+            let i1 = billObject as! InternetBill
             txtNew1.isHidden = false
-            txtNew1.text = i.providerName
+            txtNew1.text = i1.providerName
             
             txtNew2.isHidden = false
-            txtNew2.text = i.gbUsed.internetGbs()
+            txtNew2.text = i1.gbUsed.internetGbs()
+            txtBillAmount.isHidden=false
+            txtBillAmount.text=i1.billAmount.amountString()
             
         }
         
@@ -97,12 +105,14 @@ var billObject: Bill? = nil
                    lblNew2.isHidden = false
                    lblNew2.text = "Unit Used"
                    
-                   let h = billObject as! HydroBill
+                   let h1 = billObject as! HydroBill
                    txtNew1.isHidden = false
-            txtNew1.text = h.agencyName
+            txtNew1.text = h1.agencyName
                    
                    txtNew2.isHidden = false
-            txtNew2.text = h.unitConsumed.intToString()
+            txtNew2.text = h1.unitConsumed.intToString()
+            txtBillAmount.isHidden=false
+            txtBillAmount.text=h1.billAmount.amountString()
                    
                }
     
