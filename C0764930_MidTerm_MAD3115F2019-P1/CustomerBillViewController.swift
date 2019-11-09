@@ -87,11 +87,28 @@ class CustomerBillViewController: UIViewController,UITableViewDelegate,UITableVi
               billDetailVC.billObject = tempArray[indexPath.row]
               navigationController?.pushViewController(billDetailVC, animated: true)
     }
-    @IBAction func NewBill(_ sender:UIBarButtonItem) {
+
+
+    @IBAction func btnAddBill(_ sender: UIBarButtonItem) {
+    
+    let newStBd = UIStoryboard(name: "Main", bundle: nil)
+    let BillTableVc = newStBd.instantiateViewController(withIdentifier: "BillTableVc") as! AddBillTableViewController
+                                   navigationController?.pushViewController(BillTableVc, animated: true)
        
     }
     
     
+    func setGradientBackground() {
+          let colorTop =  UIColor(red: 25.0/255.0, green: 149.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
+          let colorBottom = UIColor(red: 255.0/255.0, green: 94.0/25.0, blue: 58.0/25.0, alpha: 1.0).cgColor
+          
+          let gradientLayer = CAGradientLayer()
+          gradientLayer.colors = [colorTop, colorBottom]
+          gradientLayer.locations = [0.0, 1.0]
+          gradientLayer.frame = self.view.bounds
+          
+          self.view.layer.insertSublayer(gradientLayer, at:0)
+      }
    
 
     /*

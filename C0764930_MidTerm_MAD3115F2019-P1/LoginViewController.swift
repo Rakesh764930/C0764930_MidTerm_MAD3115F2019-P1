@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
                 {
                     print("Login Successful")
                 
-                //performSegue(withIdentifier: "MoveToCustomer", sender: nil)
+               
 //                    let newStBd = UIStoryboard(name: "Main", bundle: nil)
 //                           let CustTableVc = newStBd.instantiateViewController(withIdentifier: "CustTableVc") as! CustTableViewController
 //                           navigationController?.pushViewController(CustTableVc, animated: true)
