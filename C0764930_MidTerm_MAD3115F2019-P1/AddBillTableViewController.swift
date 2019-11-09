@@ -8,8 +8,26 @@
 
 import UIKit
 
-class AddBillTableViewController: UIViewController {
+class AddBillTableViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        billPicker.count
+    }
+    
+    var billPicker: [String] = ["Mobile","Internet","Hydro"]
+       
 
+    @IBOutlet weak var pickerData: UIPickerView!
+    @IBOutlet weak var txtBillId: UITextField!
+    @IBOutlet weak var txtBilltype: UITextField!
+    @IBOutlet weak var txtBillDate: UITextField!
+    @IBOutlet weak var txtBillAmount: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
