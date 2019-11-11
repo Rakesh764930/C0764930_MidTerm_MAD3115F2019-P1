@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
  //      o u t l e s t s
     
     @IBOutlet weak var outletRemember: UISwitch!
-    
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
    
@@ -20,9 +19,8 @@ class LoginViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            let gblData = Singleton.getObject()
-            gblData.defaultCustomer()
-            // Do any additional setup after loading the view.
+
+//            // Do any additional setup after loading the view.
       
             txtUsername.text = UserDefaults.standard.string(forKey: "usnm")
             txtPassword.text = UserDefaults.standard.string(forKey: "pswd")

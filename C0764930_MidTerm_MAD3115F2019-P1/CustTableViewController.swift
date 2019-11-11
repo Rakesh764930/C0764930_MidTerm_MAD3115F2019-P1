@@ -57,12 +57,6 @@ class CustTableViewController: UIViewController,UITableViewDataSource,UITableVie
         
         
         
-//           if #available(iOS 13.0, *) {
-//               let stb2 = (storyboard?.instantiateViewController(identifier: "CustomerBillVC") as? CustomerBillViewController)!
-//               self.navigationController?.pushViewController(stb2, animated: true)
-//           } else {
-//               // Fallback on earlier versions
-//           }
        }
     /*
     // MARK: - Navigation

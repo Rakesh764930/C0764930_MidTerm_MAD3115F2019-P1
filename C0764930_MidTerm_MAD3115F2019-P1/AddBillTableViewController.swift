@@ -14,7 +14,7 @@ class AddBillTableViewController: UIViewController ,UIPickerViewDelegate,UIPicke
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        billPicker.count
+        return billPicker.count
     }
     
     var billPicker: [String] = ["Mobile","Internet","Hydro"]
